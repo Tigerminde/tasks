@@ -2,8 +2,6 @@ import ArrData from './ArrData';
 import DisplayForm from './DisplayForm';
 import initData from './InitData';
 
-const arrData = new ArrData();
-const displayForm = new DisplayForm();
 
 export default class WorkTasks {
   constructor() {
@@ -12,6 +10,8 @@ export default class WorkTasks {
     this.formInput = document.getElementById('input-form');
     this.elementInput = document.getElementById('input-task');
     this.elementError = document.querySelector('.error');
+    this. arrData = new ArrData();
+    this. displayForm = new DisplayForm();
   }
 
   init() {
